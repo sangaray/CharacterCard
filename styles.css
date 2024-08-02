@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	width: 100vw;
+	height: 100vh;
+	background-color: #3f3315;
+}
+
+.card {
+	position: relative;
+	z-index: 10;
+	margin: auto;
+	text-align: center;
+	max-width: 300px;
+	background-color: #d0b77772;
+	border-radius: 20px;
+}
+
+.card__images {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url("./images/SWLogo.svg");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	height: 300px;
+	overflow: visible;
+}
+
+.card__image {
+	position: absolute;
+	width: 150px;
+	border-radius: 50%;
+	transform: translate(-50%);
+	bottom: 12px;
+	border: 3px solid #3f3315;
+}
