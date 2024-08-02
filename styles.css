@@ -2,9 +2,13 @@
 	box-sizing: border-box;
 }
 
-body {
+body,
+h2 {
 	margin: 0;
 	padding: 0;
+}
+
+body {
 	font-family: sans-serif;
 	width: 100vw;
 	height: 100vh;
@@ -16,9 +20,12 @@ body {
 	z-index: 10;
 	margin: auto;
 	text-align: center;
-	max-width: 300px;
+	max-width: 270px;
 	background-color: #d0b77772;
 	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 0 15px 0 #ffd900;
+	margin-top: 40px;
 }
 
 .card__images {
@@ -27,7 +34,7 @@ body {
 	align-items: center;
 	background-image: url("./images/SWLogo.svg");
 	background-size: contain;
-	background-position: center;
+	background-position: center top;
 	background-repeat: no-repeat;
 	position: relative;
 	height: 300px;
@@ -36,9 +43,28 @@ body {
 
 .card__image {
 	position: absolute;
-	width: 150px;
+	width: 100px;
 	border-radius: 50%;
 	transform: translate(-50%);
-	bottom: 12px;
+	bottom: 85px;
 	border: 3px solid #3f3315;
+}
+
+.card__information {
+	margin-top: -85px;
+	position: relative;
+	padding: 20px;
+	border-radius: 8px;
+	z-index: 1;
+}
+
+h2 {
+	font-size: 20px;
+	padding: 5px;
+	color: #fff;
+}
+
+.char__type-info {
+	padding: 3px;
+	color: #fff;
 }
